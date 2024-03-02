@@ -1,0 +1,178 @@
+#primary-header {
+    background-color: #545643;
+    /* min-height: 6.5dvh;
+    max-height: 8dvh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5%;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header-title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#header-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+    font-size: 1.3rem;
+}
+
+#primary-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #6a6e69;
+}
+
+#primary-main-heading {
+    text-align: center;
+    padding: 2%;
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .15rem;
+}
+
+#event-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    justify-items: center;
+    padding: 2%;
+}
+
+.event-card {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #909580;
+    border-radius: 12px;
+
+    padding: 2vh 0;
+}
+
+.event-card * {
+    margin: .8vh 2vw;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .12rem;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-card img {
+    margin: 0;
+    max-width: 100%;
+}
+
+.card-date, .card-location {
+    font-size: 1.2rem;
+    font-weight: 200;
+
+    margin: 0;
+}
+
+.card-description {
+    text-align: justify;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+
+    overflow-y: scroll;
+}
+
+#focused-card {
+    grid-column: span 2;
+    width: 100%;
+}
+
+#focused-card .card-description {
+    justify-content: normal;
+}
+
+.sign-up-btn {
+    background-color: #6a6e69;
+    color: #909580;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+
+    margin-left: auto;
+}
+
+.sign-up-btn:hover {
+    background-color: #545643;
+}
+
+
+@media(max-width: 800px) {
+    #primary-header {
+        flex-direction: column;
+        position: relative;
+    }    
+    #focused-card {
+        grid-column: span 3;
+    }
+}
+
+@media(max-width: 700px) {
+    #header-title {
+        font-size: 2.2rem;
+    }
+    #primary-main-heading {
+        font-size: 2rem;
+    }
+    #event-card-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #focused-card {
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 450px) {
+    #header-title {
+        font-size: 2rem;
+    }
+    #primary-main-heading {
+        font-size: 1.5rem;
+    }
+    #event-card-section {
+        grid-template-columns: 1fr;
+    }
+    #focused-card {
+        grid-column: span 1;
+    }
+}
