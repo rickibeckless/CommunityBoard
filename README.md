@@ -26,6 +26,7 @@ Here's a walkthrough of implemented required features:
 
 ![Community Events Board Walkthrough](https://i.ibb.co/X46dqkV/Code-Path-Project-One-Walkthrough-1.gif)
 
+GIF also found at [Community Events Board Walkthrough](https://i.ibb.co/X46dqkV/Code-Path-Project-One-Walkthrough-1.gif) on ImgBB
 
 GIF created with: [ScreenToGif](https://www.screentogif.com/) for Windows
 
